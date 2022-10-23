@@ -1,0 +1,11 @@
+section#revs
+	.container
+		.content
+			.general-img.general-img-revs-back
+			+gt('', 'Отзывы наших студентов')
+			.revs-slider.revs-slider-video
+				each yt, n in {1:'BArWM2i_lUU',2: 'AXWKp131Lc4',3: 'QMaZsNzTLBw',4:'nLoNlLUlC1U',5: 'B_NHWneVtJA',6: '23wuzK2PtHI',7: 'bk7BXao164g',8: '5kCyZIfkSp4',9: 'RsbQk2rJH1k',10: '7DeIMDUjejU'}
+					div: .video-wrapper-revs-back: .video-wrapper.video-wrapper-revs(data-youtube=yt data-img=path+"img/revs/video-"+n+".jpg"): img(src=path+"img/revs/video-"+n+".jpg", alt="Отзыв "+n)
+	.revs-slider.revs-slider-text
+		each n in [1,2,3,4,5,6,7,8,9,10,11,12,13,14,15]
+			a.text-rev-link(href=path+"img/revs/text-"+n+".jpg" data-fancybox="text-revs"): img(src=path+"img/revs/text-"+n+".min.jpg", alt="Отзыв "+n).text-rev-img

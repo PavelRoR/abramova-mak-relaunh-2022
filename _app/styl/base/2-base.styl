@@ -27,6 +27,10 @@ header
 footer
 	width 100%
 	display block
+section
+	width 100%
+	max-width 1440px
+	margin 0 auto
 .video-wrapper
 	margin 0 auto
 	position relative
@@ -66,13 +70,15 @@ footer
 	display inline-block
 	text-align center
 	text-decoration none
-	font-size: 22px
+	font-size: 20px
 	color: #fff
 	width: auto
-	padding: 35px 80px;
+	padding: 25px 50px;
 	background-color: mP
 	border-radius: 50px;
 	transition: all .6s ease;
+	position relative
+	z-index 999
 	&:focus
 		text-decoration none
 		color #fff
@@ -82,10 +88,11 @@ footer
 		transform: translateY(-3px)
 		background-color #F0DFFC
 .general-title
-	text-align center
 	font-size: 36px
 	font-weight: bold
 	margin-bottom: 90px
+	color mP
+	line-height: 105%
 .general-list
 	li
 		list-style: none
@@ -119,3 +126,5 @@ footer
 			transform: rotate(-39deg)
 .general-text
 	margin-bottom: 20px
+.general-img
+	position absolute

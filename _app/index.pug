@@ -15,6 +15,7 @@
 -var formId = '';
 -var formVc = '';
 -var io = true;
+-var href = '#Modal';
 //- -var footer_title = true
 //- -var oferta = 'https://mastervision.su/oferta.docx'
 
@@ -22,7 +23,7 @@ mixin b(cl, href, p, target, id)
 	a.button(class=cl href!=href target=target id=id)=p
 mixin gt(cl,h3)
 	h3.general-title(class=cl)=h3
-mixin ims(cl,src,alt)
+mixin imgs(cl,src,alt)
 	img(class=cl src=path+src alt=alt)
 
 doctype html
@@ -33,15 +34,6 @@ html(lang="ru")
 	body
 		include pug/scripts/body_top_scripts
 		.wrapper
-			.container
-				br
-				br
-				br
-				br
-				ul.general-list
-					li Подводные камни при использовании метафорических ассоциативных карт, о чем вам не расскажут другие
-					li Запросы, с которыми работают метафорические ассоциативные карты
-					li Как использовать метафорические ассоциативные карты в самоанализе
 			include pug/main/1-main
 			include pug/main/2-video
 			include pug/main/3-about
