@@ -1,41 +1,66 @@
-.main-bg
-	display block
-	width 1440px
-	object-fit: cover
-	object-position: center
-	height 100%
-	max-height: 940px
-	margin 0 auto
-	left calc(100vw - 1440px)
-	right auto
+#main
 	position relative
-	top 0
-	@media screen and (min-width 1440px)
-		left 0
-	@media screen and (max-width 1229px)
-		left calc(100vw - 1390px)
-	@media screen and (max-width 1199px)
-		max-height 800px
-	@media screen and (max-width 1100px)
-		left calc(100vw - 1340px)
-	@media screen and (max-width 1050px)
-		max-height: 746px
-		left calc(100vw - 1240px)
-	@media screen and (max-width 991px)
-		display none
-.wrapper-abs
-	position absolute
-	top 0
-	left 0
-	right 0
-	bottom: 0
-	@media screen and (max-width 991px)
-		position: relative
-	&-main
-		.content
-			padding 120px 0 0
-			height 100%
-			@media screen and (max-width 1199px)
-				padding-top: 70px
-			@media screen and (max-width 991px)
-				padding 0
+	background: url(../img/backs/main.png) no-repeat center
+	background-size: cover
+	padding: 120px 0 250px
+.general-img-main-1
+	width 55px
+	height: 90px
+	background: url(../img/images/star-main-1.png) no-repeat center
+	background-size cover
+	top -100px
+	left 100px
+.general-img-main-2
+	width 32px
+	height: 49px
+	background: url(../img/images/star-main-2.png) no-repeat center
+	background-size cover
+	top 130px
+	left -40px
+.date
+	display flex
+	&-item
+		background-repeat: no-repeat
+		padding 0 40px
+		min-height 40px
+		display flex
+		align-items: center
+		&:nth-of-type(1)
+			// padding 0 40px 0 60px
+			background-image: url(../img/icons/calendar.png)
+			background-position: center left
+		&:nth-of-type(2)
+			background-image: url(../img/icons/time.png)
+			// margin 0 40px
+			border-right: 3px solid mP
+			border-left: 3px solid mP
+			padding 0 40px 0 80px
+			background-position: center left 40px
+		&-text
+			color mP
+			span
+				font-weight: bold
+.main
+	&-pre
+		font-size: 24px
+		margin 75px 0 20px
+	&-title
+		font-size: 50px
+		font-weight: bold
+		color mP
+		line-height: 100%
+		width 100%
+		max-width 550px
+	&-subtitle
+		font-size: 24px
+		width 100%
+		max-width: 290px
+		margin 25px 0 75px
+	&-author
+		position absolute
+		bottom: -120px
+		right 10%
+		font-size: 16px
+		max-width 152px
+		span
+			display block

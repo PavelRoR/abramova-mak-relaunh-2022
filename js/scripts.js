@@ -35,6 +35,21 @@ $(document).ready(function() {
             message.slideUp(500);
         });
     });
+    $('.play-button').click(function(){
+        $.fancybox.open({
+            type: 'iframe',		
+            src: 'https://youtube.com/embed/J_jh9-hnQX0?autoplay=1&mute=1&modaestbranding=1',
+            smallBtn: true,
+            iframe: {
+                preload: false,
+                css: {
+                    width: '800px'
+                }	
+            }
+    
+        });
+    
+    });
     $('.button-up').fancybox();
     $('[data-fancybox]').fancybox({
         loop: 1,

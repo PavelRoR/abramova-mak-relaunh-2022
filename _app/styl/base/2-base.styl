@@ -7,9 +7,20 @@ body
 	font-family: G
 	color #4D4D4D
 	background-color #fff
-	line-height: 1.5
+	line-height: 109%
+.container
+	@media screen and (min-width:768px)
+		width: 750px
+	@media screen and (min-width:992px)
+		width: 970px
+	@media screen and (min-width:1200px)
+		width: 1170px
+	@media screen and (min-width 1230px)
+		width 98%
 .wrapper
 	overflow: hidden;
+.content
+	position relative
 a
 	color: #4D4D4D
 	&:focus
@@ -90,7 +101,7 @@ section
 .general-title
 	font-size: 36px
 	font-weight: bold
-	margin-bottom: 90px
+	margin-bottom: 50px
 	color mP
 	line-height: 105%
 .general-list
