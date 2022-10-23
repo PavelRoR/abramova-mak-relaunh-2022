@@ -1,14 +1,15 @@
 section#author
 	.container
 		.content
-			.author-back
+			.general-img.general-img-author-back
 			.general-img.general-img-author
+			+gt('', 'Жанна Абрамова')
 			.row
 				.col-md-4.col-md-push-8
 					+imgs('author-img', 'img/images/janna.png', 'Жанна Абрамова')
 				.col-md-8.col-md-pull-4
-					.author-list
-						+imgs('author-list-img', 'img/images/ellipse.png', 'Рамка')
+					.author-info
+						+imgs('author-info-img', 'img/images/ellipse.png', 'Рамка')
 						ul.general-list.general-list-author
 							li
 								span Более 15 лет

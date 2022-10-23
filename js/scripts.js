@@ -1,15 +1,15 @@
 $(document).ready(function() {
     $(function () {
         var check = $('.check', this),
-            email = $('.send-input', this),
+            email = $('.input', this),
             message = $('.alert-message', this),
-            button = $('.send-button', this);
-        $(".send-form").on("submit", function () {
+            button = $('.button-form', this);
+        $(".form").on("submit", function () {
             var check = $('.check', this),
                 message = $('.alert-message', this),
                 reNone = /.+/,
-                email = $('.send-input', this),
-                button = $('.send-button', this);
+                email = $('.input', this),
+                button = $('.button-form', this);
             if (!email.val().match(reNone)) {
                 message.text('Введите email').slideDown(500);
                 return false;
@@ -42,9 +42,9 @@ $(document).ready(function() {
             smallBtn: true,
             iframe: {
                 preload: false,
-                css: {
-                    width: '800px'
-                }	
+                // css: {
+                //     width: '800px'
+                // }	
             }
     
         });
@@ -55,6 +55,7 @@ $(document).ready(function() {
         loop: 1,
     });
     $('.revs-slider-video').slick({
+        lazyLoad: 'ondemand',
         autoplay: false,
         autoplaySpeed: 3000,
         slidesToShow: 1,
@@ -64,9 +65,8 @@ $(document).ready(function() {
         speed: 300,
         arrows: true,
         centerPadding: '40px',
-        // adaptiveHeight: true,
-        centerMode: true,
-        // appendArrows: '.video-revs-arrows-1',
+        prevArrow: '<button type="button" class="slick-prev"></button>',
+        nextArrow: '<button type="button" class="slick-next"></button>',
         responsive: [
         {
             breakpoint: 768,
@@ -77,6 +77,7 @@ $(document).ready(function() {
         ]
     });
     $('.revs-slider-text').slick({
+        lazyLoad: 'ondemand',
         autoplay: false,
         autoplaySpeed: 3000,
         slidesToShow: 2,
@@ -86,9 +87,8 @@ $(document).ready(function() {
         speed: 300,
         arrows: true,
         centerPadding: '40px',
-        // adaptiveHeight: true,
-        centerMode: true,
-        // appendArrows: '.video-revs-arrows-2',
+        prevArrow: '<button type="button" class="slick-prev"></button>',
+        nextArrow: '<button type="button" class="slick-next"></button>',
         responsive: [
         {
             breakpoint: 561,
