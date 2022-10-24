@@ -1,23 +1,13 @@
 -var path = '../';
 -var head_url = '';
--var head_title = '«Метафоричекие ассоциативные карты»';
--var head_description = '3-дневный онлайн мастер-класс Жанны Абрамовой';
+-var head_title = 'УПС! Я не могу отправить рассылку на мастер-класс, тебе нужно подтвердить свою почту';
 //-var head_img = 'img/banner.jpg';
--var styles = path+'css/styles.min.css';
+-var styles = path+'css/confirm.min.css';
 -var fav_ico = path+'favicon.ico';
 -var fav_png = path+'favicon.png';
 -var fav_ap = path+'favicon.svg';
--var libs = path+'js/libs.min.js';
--var scripts = path+'js/scripts.min.js';
--var noref = true
--var action = '';
--var group = '';
--var formId = '';
--var formVc = '';
+-var noref = true;
 -var io = true;
--var href = '#Modal';
-//- -var footer_title = true
-//- -var oferta = 'https://mastervision.su/oferta.docx'
 
 mixin b(cl, href, p, target, id)
 	a.button(class=cl href!=href target=target id=id)=p
@@ -34,14 +24,7 @@ html(lang="ru")
 	body
 		include pug/scripts/body_top_scripts
 		.wrapper
-			include pug/main/1-main
-			include pug/main/2-video
-			include pug/main/3-about
-			include pug/main/4-plan
-			include pug/main/5-author
-			include pug/main/6-revs
+			include pug/confirm/1-main
 			include pug/base/2-footer
-		include pug/main/7-modal
-		include pug/base/3-scripts
 		//- include pug/scripts/chat
 		include pug/scripts/body_bottom_scripts

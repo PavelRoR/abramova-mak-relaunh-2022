@@ -246,7 +246,7 @@ section {
 .general-img-main-stars {
   width: 494px;
   height: 372px;
-  background: url("../img/images/plan-stars-1.png") no-repeat center;
+  background: url("../img/images/plan-stars-2.png") no-repeat center;
   -webkit-background-size: contain;
        -o-background-size: contain;
           background-size: contain;
@@ -280,8 +280,8 @@ section {
   -webkit-background-size: contain;
        -o-background-size: contain;
           background-size: contain;
-  top: -50px;
-  left: 0;
+  top: -100px;
+  left: -100px;
 }
 @media screen and (max-width: 560px) {
   .general-main-back {
@@ -296,7 +296,7 @@ section {
   }
 }
 .main-title {
-  font-size: 30px;
+  font-size: 36px;
   font-weight: bold;
   color: #613a7c;
   line-height: 110%;
@@ -304,39 +304,83 @@ section {
 }
 @media screen and (max-width: 991px) {
   .main-title {
-    font-size: 24px;
+    font-size: 28px;
     margin-bottom: 20px;
   }
 }
 @media screen and (max-width: 386px) {
   .main-title {
-    font-size: 20px;
+    font-size: 24px;
   }
 }
 .main-text {
-  font-size: 20px;
+  font-size: 22px;
   margin-bottom: 20px;
   line-height: 110%;
 }
 @media screen and (max-width: 991px) {
   .main-text {
-    font-size: 18px;
+    font-size: 20px;
   }
 }
 @media screen and (max-width: 386px) {
   .main-text {
-    margin-bottom: 10px;
+    font-size: 18px;
   }
 }
 .main-text span {
   font-weight: bold;
 }
-.button-main {
+.posts {
   margin-bottom: 35px;
 }
-@media screen and (max-width: 386px) {
-  .button-main {
+@media screen and (max-width: 560px) {
+  .posts {
     margin-bottom: 20px;
+  }
+}
+.post-link {
+  display: inline-block;
+  margin-right: 30px;
+  -webkit-transition: all 0.3s ease-out;
+  -o-transition: all 0.3s ease-out;
+  -moz-transition: all 0.3s ease-out;
+  transition: all 0.3s ease-out;
+}
+@media screen and (max-width: 560px) {
+  .post-link {
+    margin-right: 15px;
+  }
+}
+@media screen and (max-width: 386px) {
+  .post-link {
+    margin-right: 10px;
+  }
+}
+.post-link:last-child {
+  margin-right: 0;
+}
+.post-link:hover {
+  -webkit-transform: translateY(-8px);
+     -moz-transform: translateY(-8px);
+      -ms-transform: translateY(-8px);
+       -o-transform: translateY(-8px);
+          transform: translateY(-8px);
+}
+.post-icon {
+  display: block;
+  width: 100%;
+  max-width: 83px;
+  margin: 0 auto;
+}
+@media screen and (max-width: 560px) {
+  .post-icon {
+    max-width: 65px;
+  }
+}
+@media screen and (max-width: 386px) {
+  .post-icon {
+    max-width: 45px;
   }
 }
 footer {
