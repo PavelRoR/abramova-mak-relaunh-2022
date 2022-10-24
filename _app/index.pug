@@ -1,5 +1,5 @@
 -var path = '';
--var head_url = '';
+-var head_url = 'https://abramova.iomp.online/pmomp-mak-webinar/';
 -var head_title = '«Метафоричекие ассоциативные карты»';
 -var head_description = '3-дневный онлайн мастер-класс Жанны Абрамовой';
 //-var head_img = 'img/banner.jpg';
@@ -9,18 +9,18 @@
 -var fav_ap = path+'favicon.svg';
 -var libs = path+'js/libs.min.js';
 -var scripts = path+'js/scripts.min.js';
--var noref = true
--var action = '';
--var group = '';
--var formId = '';
--var formVc = '';
+-var noref = true;
+-var action = 'https://shop.iomp.ru/?r=personal/newsletter/sub/add&id=33401&lg=ru&Contact[id_newsletter]=';
+-var group = '477';
+-var formId = '221';
+-var formVc = '3296406014';
 -var io = true;
 -var href = '#Modal';
 //- -var footer_title = true
 //- -var oferta = 'https://mastervision.su/oferta.docx'
 
 mixin b(cl, href, p, target, id)
-	a.button(class=cl href!=href target=target id=id)=p
+	a.button(class=cl href!=href target=target id=id)!=p
 mixin gt(cl,h3)
 	h3.general-title(class=cl)=h3
 mixin imgs(cl,src,alt)

@@ -2,6 +2,8 @@
 	padding 30px 0 90px
 	@media screen and (max-width 1199px)
 		padding 60px 0
+	@media screen and (max-width 560px)
+		padding 40px 0
 .general-img-about-back
 	width 435px
 	height: 435px
@@ -11,6 +13,11 @@
 	right 0
 	@media screen and (max-width 1199px)
 		top: 150px
+	@media screen and (max-width 560px)
+		width 309px
+		height: 309px
+		top -60px
+		right -80px
 .general-img-about-1
 	width 52px
 	height: 102px
@@ -21,6 +28,9 @@
 	@media screen and (max-width 1199px)
 		right 0
 		top 70px
+	@media screen and (max-width 560px)
+		background: none
+		display none
 .general-img-about-2
 	width 52px
 	height: 82px
@@ -28,6 +38,10 @@
 	background-size contain
 	left: -50px
 	bottom: 200px
+.general-title-about
+	margin-bottom: 70px
+	@media screen and (max-width 560px)
+		margin-bottom: 55px
 .abouts
 	width 100%
 	max-width 960px
@@ -36,6 +50,8 @@
 	flex-wrap: wrap
 	align-items: center
 	justify-content: space-between
+	@media screen and (max-width 560px)
+		margin-bottom: 0
 	&-item
 		width 100%
 		max-width 460px
@@ -48,6 +64,10 @@
 		display flex
 		align-items: center
 		justify-content: center
+		@media screen and (max-width 991px)
+			min-height 1px
+		@media screen and (max-width 560px)
+			margin-bottom: 36px
 		&:before
 			content: ''
 			display block
@@ -58,6 +78,10 @@
 			background-color: mP
 			top -20px
 			left 35px
+			@media screen and (max-width 560px)
+				width 36px
+				height: 36px
+				top -18px
 		&:after
 			content: ''
 			display block
@@ -69,3 +93,8 @@
 			border-bottom: 3px solid #fff
 			border-left: 3px solid #fff
 			transform: rotate(-39deg)
+			@media screen and (max-width 560px)
+				width 18px
+				height: 11px
+				top -7px
+				left 45px

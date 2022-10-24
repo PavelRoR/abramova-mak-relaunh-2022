@@ -140,7 +140,7 @@ section {
 @media screen and (max-width: 560px) {
   .button {
     font-size: 18px;
-    padding: 16px 35px;
+    padding: 13px 35px;
   }
 }
 .button:focus {
@@ -168,6 +168,12 @@ section {
   .general-title {
     font-size: 32px;
     margin-bottom: 40px;
+  }
+}
+@media screen and (max-width: 560px) {
+  .general-title {
+    font-size: 26px;
+    margin-bottom: 30px;
   }
 }
 .general-list li {

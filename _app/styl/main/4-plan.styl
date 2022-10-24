@@ -1,5 +1,9 @@
 #plan
 	padding 90px 0
+	@media screen and (max-width 991px)
+		padding 60px 0
+	@media screen and (max-width 560px)
+		padding 40px 0
 .general-img-plan-stars-1
 	width 494px
 	height: 372px
@@ -16,6 +20,12 @@
 	@media screen and (max-width 991px)
 		right -180px
 		top -350px
+	@media screen and (max-width 560px)
+		background-image: url(../img/images/plan-stars-1-min.png)
+		width 313px
+		height: 319px
+		top calc(50% - 360px)
+		right calc(50% - 360px)
 .general-img-plan-back
 	width 536px
 	height: 536px
@@ -26,6 +36,11 @@
 	z-index -1
 	@media screen and (max-width 1199px)
 		top 0
+	@media screen and (max-width 767px)
+		left -120px
+		top -180px
+		bottom: auto
+		right: auto
 .general-img-plan-1
 	width 65px
 	height: 103px
@@ -38,6 +53,29 @@
 		right 220px
 		top auto
 		bottom: 230px
+	@media screen and (max-width 560px)
+		background: none
+		display none
+.general-img-plan-1-day
+	display none
+	@media screen and (max-width 560px)
+		background: url(../img/images/star-1.png) no-repeat center
+		background-size contain
+		display block
+		width 32px
+		height: 50px
+		top -50px
+		left 150px
+.general-img-plan-2-day
+	display none
+	@media screen and (max-width 560px)
+		background: url(../img/images/star-2.png) no-repeat center
+		background-size contain
+		display block
+		width 51px
+		height: 81px
+		top 0
+		left 220px
 .general-img-plan-stars-2
 	width 900px
 	height: 700px
@@ -54,15 +92,30 @@
 	@media screen and (max-width 991px)
 		bottom: -50px
 		right -450px
+	@media screen and (max-width 767px)
+		bottom: 100px
+		right -500px
+	@media screen and (max-width 560px)
+		background: none
+		display none
 .days
 	display flex
 	align-items: flex-start
 	justify-content: space-between
 	flex-wrap: wrap
 	margin-bottom: 70px
+	@media screen and (max-width 767px)
+		margin-bottom: 0
+	@media screen and (max-width 560px)
+		display block
 .day
+	position relative
 	width 30%
-	// margin 0 auto 30px
+	@media screen and (max-width 767px)
+		width 46%
+		margin-bottom: 50px
+	@media screen and (max-width 560px)
+		width 100%
 	&-title
 		text-align center
 		font-size: 42px
@@ -72,6 +125,12 @@
 		padding-bottom: 20px
 		margin-bottom: 40px
 		border-bottom: 3px solid mP
+		@media screen and (max-width 991px)
+			font-size: 32px
+		@media screen and (max-width 560px)
+			font-size: 26px
+			width 136px
+			margin-bottom: 35px
 		&:before
 		&:after
 			content: ''

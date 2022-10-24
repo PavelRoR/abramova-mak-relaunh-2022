@@ -2,6 +2,8 @@
 	padding 90px 0
 	@media screen and (max-width 1199px)
 		padding 60px 0
+	@media screen and (max-width 560px)
+		padding 40px 0
 .general-img-video-back
 	width 698px
 	height: 698px
@@ -13,6 +15,11 @@
 		left auto
 		top 300px
 		right -100px
+	@media screen and (max-width 560px)
+		width 331px
+		height: 331px
+		right -100px
+		top calc(50% + 300px)
 .general-img-video-singlestar
 	@media screen and (max-width 1199px)
 		width 47px
@@ -36,6 +43,9 @@
 		right -200px
 	@media screen and (max-width 991px)
 		right -280px
+	@media screen and (max-width 767px)
+		background: none
+		display none
 .general-title-video
 	width 88%
 .video-content
@@ -49,6 +59,10 @@
 		margin 50px auto 70px
 		max-width none
 		width 96%
+	@media screen and (max-width 767px)
+		margin 30px auto 50px
+	@media screen and (max-width 560px)
+		margin 20px auto 35px
 .play-button
 	cursor pointer
 	position absolute
@@ -68,6 +82,11 @@
 	animation-duration: 2s;
 	animation-fill-mode: both;
 	animation-iteration-count: infinite;
+	@media screen and (max-width 560px)
+		width 40px
+		height: 40px
+		top calc(50% - 20px)
+		background-size: 10px
 	&:hover
 		animation-play-state: paused
 @keyframes playIt
