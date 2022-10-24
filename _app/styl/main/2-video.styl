@@ -1,5 +1,7 @@
 #video
 	padding 90px 0
+	@media screen and (max-width 1199px)
+		padding 60px 0
 .general-img-video-back
 	width 698px
 	height: 698px
@@ -7,6 +9,18 @@
 	background-size: contain
 	top 0
 	left -150px
+	@media screen and (max-width 1199px)
+		left auto
+		top 300px
+		right -100px
+.general-img-video-singlestar
+	@media screen and (max-width 1199px)
+		width 47px
+		height: 75px
+		background: url(../img/images/star-1.png) no-repeat center
+		background-size contain
+		top 120px
+		left -50px
 .general-img-video-stars
 	width 400px
 	height: 465px
@@ -14,12 +28,25 @@
 	background-size: contain
 	top 0
 	right -150px
+	@media screen and (max-width 1199px)
+		background-image: url(../img/images/video-stars-mid.png)
+		width 428px
+		height: 396px
+		top 150px
+		right -200px
+.general-title-video
+	width 88%
 .video-content
 	position relative
 	margin 50px 0 70px 7.8%
 	max-width 964px
 	&-img
 		display block
+		width 100%
+	@media screen and (max-width 1199px)
+		margin 50px auto 70px
+		max-width none
+		width 96%
 .play-button
 	cursor pointer
 	position absolute
@@ -35,13 +62,13 @@
 	background: #fff url(../img/icons/play.png) no-repeat center
 	background-size: auto
 	transition: all .7s ease
-	animation: pulse
+	animation: playIt
 	animation-duration: 2s;
 	animation-fill-mode: both;
 	animation-iteration-count: infinite;
 	&:hover
 		animation-play-state: paused
-@keyframes pulse
+@keyframes playIt
 	0%
 		box-shadow: 0 0 0 0px rgba(#fff, .5)
 	50%

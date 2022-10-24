@@ -548,6 +548,11 @@ section {
           background-size: cover;
   padding: 120px 0 250px;
 }
+@media screen and (max-width: 1199px) {
+  #main {
+    padding: 40px 0 120px;
+  }
+}
 .general-img-main-1 {
   width: 55px;
   height: 87px;
@@ -557,6 +562,11 @@ section {
           background-size: cover;
   top: -100px;
   left: 100px;
+}
+@media screen and (max-width: 1199px) {
+  .general-img-main-1 {
+    top: -105px;
+  }
 }
 .general-img-main-2 {
   width: 32px;
@@ -632,11 +642,22 @@ section {
   font-size: 16px;
   max-width: 152px;
 }
+@media screen and (max-width: 1199px) {
+  .main-author {
+    bottom: -60px;
+    right: 5%;
+  }
+}
 .main-author span {
   display: block;
 }
 #video {
   padding: 90px 0;
+}
+@media screen and (max-width: 1199px) {
+  #video {
+    padding: 60px 0;
+  }
 }
 .general-img-video-back {
   width: 698px;
@@ -648,6 +669,25 @@ section {
   top: 0;
   left: -150px;
 }
+@media screen and (max-width: 1199px) {
+  .general-img-video-back {
+    left: auto;
+    top: 300px;
+    right: -100px;
+  }
+}
+@media screen and (max-width: 1199px) {
+  .general-img-video-singlestar {
+    width: 47px;
+    height: 75px;
+    background: url("../img/images/star-1.png") no-repeat center;
+    -webkit-background-size: contain;
+         -o-background-size: contain;
+            background-size: contain;
+    top: 120px;
+    left: -50px;
+  }
+}
 .general-img-video-stars {
   width: 400px;
   height: 465px;
@@ -658,6 +698,18 @@ section {
   top: 0;
   right: -150px;
 }
+@media screen and (max-width: 1199px) {
+  .general-img-video-stars {
+    background-image: url("../img/images/video-stars-mid.png");
+    width: 428px;
+    height: 396px;
+    top: 150px;
+    right: -200px;
+  }
+}
+.general-title-video {
+  width: 88%;
+}
 .video-content {
   position: relative;
   margin: 50px 0 70px 7.8%;
@@ -665,6 +717,14 @@ section {
 }
 .video-content-img {
   display: block;
+  width: 100%;
+}
+@media screen and (max-width: 1199px) {
+  .video-content {
+    margin: 50px auto 70px;
+    max-width: none;
+    width: 96%;
+  }
 }
 .play-button {
   cursor: pointer;
@@ -689,10 +749,10 @@ section {
   -o-transition: all 0.7s ease;
   -moz-transition: all 0.7s ease;
   transition: all 0.7s ease;
-  -webkit-animation: pulse;
-     -moz-animation: pulse;
-       -o-animation: pulse;
-          animation: pulse;
+  -webkit-animation: playIt;
+     -moz-animation: playIt;
+       -o-animation: playIt;
+          animation: playIt;
   -webkit-animation-duration: 2s;
      -moz-animation-duration: 2s;
        -o-animation-duration: 2s;
@@ -712,7 +772,7 @@ section {
        -o-animation-play-state: paused;
           animation-play-state: paused;
 }
-@-moz-keyframes pulse {
+@-moz-keyframes playIt {
   0% {
     box-shadow: 0 0 0 0px rgba(255,255,255,0.5);
   }
@@ -723,7 +783,7 @@ section {
     box-shadow: 0 0 0 0 rgba(255,255,255,0.5);
   }
 }
-@-webkit-keyframes pulse {
+@-webkit-keyframes playIt {
   0% {
     -webkit-box-shadow: 0 0 0 0px rgba(255,255,255,0.5);
             box-shadow: 0 0 0 0px rgba(255,255,255,0.5);
@@ -737,7 +797,7 @@ section {
             box-shadow: 0 0 0 0 rgba(255,255,255,0.5);
   }
 }
-@-o-keyframes pulse {
+@-o-keyframes playIt {
   0% {
     box-shadow: 0 0 0 0px rgba(255,255,255,0.5);
   }
@@ -748,7 +808,7 @@ section {
     box-shadow: 0 0 0 0 rgba(255,255,255,0.5);
   }
 }
-@keyframes pulse {
+@keyframes playIt {
   0% {
     -webkit-box-shadow: 0 0 0 0px rgba(255,255,255,0.5);
             box-shadow: 0 0 0 0px rgba(255,255,255,0.5);
@@ -765,6 +825,11 @@ section {
 #about {
   padding: 30px 0 90px;
 }
+@media screen and (max-width: 1199px) {
+  #about {
+    padding: 60px 0;
+  }
+}
 .general-img-about-back {
   width: 435px;
   height: 435px;
@@ -775,6 +840,11 @@ section {
   top: -80px;
   right: 0;
 }
+@media screen and (max-width: 1199px) {
+  .general-img-about-back {
+    top: 150px;
+  }
+}
 .general-img-about-1 {
   width: 52px;
   height: 102px;
@@ -784,6 +854,12 @@ section {
           background-size: contain;
   top: 0;
   right: -80px;
+}
+@media screen and (max-width: 1199px) {
+  .general-img-about-1 {
+    right: 0;
+    top: 70px;
+  }
 }
 .general-img-about-2 {
   width: 52px;
@@ -885,6 +961,15 @@ section {
   top: -400px;
   right: -300px;
 }
+@media screen and (max-width: 1199px) {
+  .general-img-plan-stars-1 {
+    background-image: url("../img/images/plan-stars-1-mid.png");
+    width: 288px;
+    height: 368px;
+    right: -100px;
+    top: -300px;
+  }
+}
 .general-img-plan-back {
   width: 536px;
   height: 536px;
@@ -894,6 +979,12 @@ section {
           background-size: contain;
   top: -150px;
   left: -100px;
+  z-index: -1;
+}
+@media screen and (max-width: 1199px) {
+  .general-img-plan-back {
+    top: 0;
+  }
 }
 .general-img-plan-1 {
   width: 65px;
@@ -905,6 +996,14 @@ section {
   top: -30px;
   left: -70px;
 }
+@media screen and (max-width: 1199px) {
+  .general-img-plan-1 {
+    left: auto;
+    right: 220px;
+    top: auto;
+    bottom: 230px;
+  }
+}
 .general-img-plan-stars-2 {
   width: 900px;
   height: 700px;
@@ -914,6 +1013,15 @@ section {
           background-size: contain;
   bottom: -330px;
   right: -350px;
+}
+@media screen and (max-width: 1199px) {
+  .general-img-plan-stars-2 {
+    background-image: url("../img/images/plan-stars-2-mid.png");
+    width: 787px;
+    height: 536px;
+    bottom: -280px;
+    right: -250px;
+  }
 }
 .days {
   display: -webkit-box;
@@ -979,6 +1087,12 @@ section {
   bottom: 100px;
   left: -50px;
 }
+@media screen and (max-width: 1199px) {
+  .general-img-author-back {
+    background: none;
+    display: none;
+  }
+}
 .general-img-author {
   width: 48px;
   height: 76px;
@@ -988,6 +1102,12 @@ section {
           background-size: contain;
   top: 350px;
   left: 0;
+}
+@media screen and (max-width: 1199px) {
+  .general-img-author {
+    top: 320px;
+    left: -20px;
+  }
 }
 .author-img {
   display: block;
@@ -1061,12 +1181,35 @@ section {
   margin-right: 102px;
 }
 #revs {
-  padding: 90px 0;
+  padding: 60px 0 150px;
+}
+@media screen and (max-width: 1199px) {
+  #revs {
+    padding: 40px 0 150px;
+  }
+}
+@media screen and (max-width: 1199px) {
+  .general-img-revs-back {
+    width: 536px;
+    height: 536px;
+    background: url("../img/backs/blur.png") no-repeat center;
+    -webkit-background-size: contain;
+         -o-background-size: contain;
+            background-size: contain;
+    top: -160px;
+    left: -50px;
+    z-index: -1;
+  }
 }
 .slick-dotted.slick-slider {
   margin: 0 auto;
   width: 100%;
   max-width: 940px;
+}
+@media screen and (max-width: 1199px) {
+  .slick-dotted.slick-slider {
+    max-width: 770px;
+  }
 }
 .revs-slider-text.slick-dotted.slick-slider {
   margin-bottom: 120px;
