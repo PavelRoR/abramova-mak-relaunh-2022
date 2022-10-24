@@ -164,11 +164,22 @@ section {
   color: #613a7c;
   line-height: 105%;
 }
+@media screen and (max-width: 991px) {
+  .general-title {
+    font-size: 32px;
+    margin-bottom: 40px;
+  }
+}
 .general-list li {
   list-style: none;
   padding-left: 30px;
   margin-bottom: 30px;
   position: relative;
+}
+@media screen and (max-width: 560px) {
+  .general-list li {
+    margin-bottom: 20px;
+  }
 }
 .general-list li:last-child {
   margin-bottom: 0;

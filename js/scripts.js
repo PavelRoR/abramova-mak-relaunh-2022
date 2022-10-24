@@ -64,36 +64,29 @@ $(document).ready(function() {
         dots: true,
         speed: 300,
         arrows: true,
-        centerPadding: '40px',
+        // centerPadding: '40px',
         prevArrow: '<button type="button" class="slick-prev"></button>',
-        nextArrow: '<button type="button" class="slick-next"></button>',
-        responsive: [
-        {
-            breakpoint: 768,
-            settings: {
-                slidesToShow: 1
-            }
-        }
-        ]
+        nextArrow: '<button type="button" class="slick-next"></button>'
     });
     $('.revs-slider-text').slick({
         lazyLoad: 'ondemand',
         autoplay: false,
         autoplaySpeed: 3000,
         slidesToShow: 2,
-        slidesToScroll: 1,
+        slidesToScroll: 2,
         infinite: true,
         dots: true,
         speed: 300,
         arrows: true,
-        centerPadding: '40px',
+        // centerPadding: '20px',
         prevArrow: '<button type="button" class="slick-prev"></button>',
         nextArrow: '<button type="button" class="slick-next"></button>',
         responsive: [
         {
-            breakpoint: 561,
+            breakpoint: 767,
             settings: {
-                slidesToShow: 1
+                slidesToShow: 1,
+                slidesToScroll: 1,
             }
         }
         ]

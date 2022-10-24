@@ -1,5 +1,17 @@
 #author
 	padding 90px 0
+.general-title-dt
+	@media screen and (max-width 991px)
+		display none
+.general-title-mob
+	display none
+	@media screen and (max-width 991px)
+		display block
+		font-size: 36px
+		span
+			@media screen and (max-width 560px)
+				display block
+				margin-left: 63px
 .general-img-author-back
 	width 600px
 	height: 600px
@@ -28,25 +40,47 @@
 		z-index 20
 		top -50px
 		left -200px
+		@media screen and (max-width 991px)
+			position: static
+		@media screen and (max-width 560px)
+			display none
+		&-mob
+			display none
+			@media screen and (max-width 560px)
+				display block
 	&-info
 		position relative
 		&-img
 			position absolute
 			top 0
 			right -85px
+			@media screen and (max-width 991px)
+				display none
 .general-list-author
 	text-align right
 	padding 60px 0 130px
+	@media screen and (max-width 991px)
+		padding 0 0 50px
+		text-align left
 	li
 		padding 0 40px 0 0
 		max-width 470px
 		margin: 0 0 35px auto
+		@media screen and (max-width 991px)
+			padding 0 0 0 30px
+			max-width none
+			margin 0 0 20px
 		&:before
 			width 25px
 			height: 25px
 			left auto
 			right 0
 			top calc(50% - 14px)
+			@media screen and (max-width 991px)
+				top 0
+				left 0
+				width 18px
+				height: 18px
 		&:after
 			left auto
 			right 6px
@@ -54,6 +88,12 @@
 			width 12px
 			height: 7px
 			border-width: 3px
+			@media screen and (max-width 991px)
+				top 6px
+				left 5px
+				width 9px
+				height: 5px
+				border-width: 2px
 		&:nth-child(2)
 			margin-right: 64px
 		&:nth-child(3)
@@ -72,3 +112,6 @@
 			margin-right: 184px
 		&:nth-child(10)
 			margin-right: 102px
+.button-author
+	@media screen and (max-width 560px)
+		display none

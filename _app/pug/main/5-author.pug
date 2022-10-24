@@ -3,10 +3,13 @@ section#author
 		.content
 			.general-img.general-img-author-back
 			.general-img.general-img-author
-			+gt('', 'Жанна Абрамова')
+			+gt('general-title-dt', 'Жанна Абрамова')
 			.row
 				.col-md-4.col-md-push-8
-					+imgs('author-img', 'img/images/janna.png', 'Жанна Абрамова')
+					+imgs('author-img author-img-dt', 'img/images/janna.png', 'Жанна Абрамова')
+					+imgs('author-img author-img-mob', 'img/images/janna-min.png', 'Жанна Абрамова')
+					h3.general-title.general-title-mob Жанна 
+						span Абрамова
 				.col-md-8.col-md-pull-4
 					.author-info
 						+imgs('author-info-img', 'img/images/ellipse.png', 'Рамка')
@@ -39,4 +42,4 @@ section#author
 							li
 								span Автор
 								|  курсов по новой системной психологии, системной терапии, коучинга.
-			+b('button-up', href, 'Хочу на мастер-класс')
+			+b('button-up button-author', href, 'Хочу на мастер-класс')
